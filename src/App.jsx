@@ -1,11 +1,23 @@
-import React from 'react'
+
+import { useState } from 'react'
+import Navbar from './Navbar'
 
 const App = () => {
-  return (
+
+const[logo,setLogo] = useState("myAPP")
+
+return (
     <div>
-      <h1>Hello, World!</h1>
+
+<Navbar data={logo}/>
     </div>
+
   )
 }
 
 export default App
+
+
+
+
+
